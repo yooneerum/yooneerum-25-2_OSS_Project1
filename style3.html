@@ -6,16 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #menulist li a {
-            text-decoration: none;
+        body {
+            margin-left: 20px;
+            font: 100% Verdana;
+            line-height: 150%;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #4CAF50;
+        }
+
+        a {
             color: black;
-            cursor: text;
+        }
+
+        #top {
+            margin-top: 45px;
+        }
+
+        #menulist {
+            list-style: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: flex;
+            gap: 0.1%;
+            flex-wrap: wrap;
+        }
+
+        #menulist li a {
+            width: 165px;
+            float: left;
+            margin: 4px;
+            padding: 2px;
+            text-decoration: none;
+            color: white;
+            background-color: #555555;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #menulist li:nth-child(3) a {
+            background-color: #04AA6D;
+        }
+
+        #menulist li:hover a {
+            background-color: #000;
+        }
+
+        .link_h a:hover {
+            color: #84c754;
+        }
+
+        #sidebar {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            line-height: 160%;
+        }
+
+        #bottom p {
+            text-align: center;
+            padding: 10px;
+            margin-top: 0;
+            font-size: 70%;
+            line-height: 14px;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div id="top">
         <h1>Welcome to 윤이름's Homepage (22200494)</h1>
         <p>Use the menu to select different Stylesheets</p>
     </div>
@@ -30,7 +94,8 @@
     </div>
     <div>
         <h1>Same Page Different Stylesheets</h1>
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+        <p class="link_h">This is a demonstration of how different stylesheets can change the layout of your HTML page.
+            You can change
             the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
             links:
             <br><a href="style1.html">Stylesheet1</a>, <a href="#">Stylesheet2</a>, <a
@@ -39,16 +104,19 @@
     </div>
     <div>
         <h2>No Styles</h2>
-        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+        <p class="link_h">This page uses DIV elements to group different sections of the HTML page. Click here to see
+            how the page
             looks like
             with no stylesheet:
             <br><a href="nostyle.html">No Stylesheet</a>.
         </p>
     </div>
-    <div>
+    <div id="sidebar">
         <h3>Side-Bar</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="bottom">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
             suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
@@ -56,6 +124,8 @@
             accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
             nulla facilisi.</p>
     </div>
+
+
 </body>
 
 </html>
